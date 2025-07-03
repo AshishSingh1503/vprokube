@@ -4,9 +4,9 @@ metadata:
   name: vprocache01
 spec:
   ports:
-    - protocol: TCP
-      port: 11211
-      targetPort: vpromc-port
+  - port: 11211
+    targetPort: vpromc-port
+    protocol: TCP
   selector:
-    app: vpromc
+    app: vpromc 
   type: ClusterIP

@@ -4,12 +4,10 @@ metadata:
   name: db-pv-claim
   labels:
     app: vprodb
-
 spec:
+  storageClassName: default
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 3Gi
-  storageClassName: default
-  
